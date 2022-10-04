@@ -1,0 +1,22 @@
+# Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
+
+def CheckForErrors(Text):
+    textFalse = False
+    while not textFalse:
+        try:
+            number = float(input(f"{Text}"))
+            textFalse = True
+        except ValueError:
+            print("Введите число!!!")
+    return number
+# Конструкция try..except имеет следующее формальное определение:
+#try 
+# инструкции
+#except [Тип_исключения]:
+# инструкции
+def number(num):
+    sum = 0
+    for i in str(num):
+      if i != ".":
+            sum += int(i)
+    return sum
